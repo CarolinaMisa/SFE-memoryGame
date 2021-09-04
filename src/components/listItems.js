@@ -2,36 +2,37 @@ import React from 'react';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import PeopleIcon from '@material-ui/icons/People';
-import BarChartIcon from '@material-ui/icons/BarChart';
+import NumberCube from './Sidebar/Numbers';
+import Words from './Sidebar/Words';
+import Colors from './Sidebar/Colors';
+import Additions from './Sidebar/Additions';
+import "./css/styles.css";
 
 export const mainListItems = (
     <div>
         <ListItem button>
             <ListItemIcon>
-                <DashboardIcon />
-            </ListItemIcon>
+                <NumberCube />
+                </ListItemIcon>
             <ListItemText primary="Números" />
         </ListItem>
         <ListItem button>
             <ListItemIcon>
-                <ShoppingCartIcon />
+                <Words />
             </ListItemIcon>
-            <ListItemText primary="Palabras" />
+            <ListItemText primary="Primeras palabras"/>
         </ListItem>
         <ListItem button>
             <ListItemIcon>
-                <PeopleIcon />
-            </ListItemIcon>
-            <ListItemText primary="Sumas" />
-        </ListItem>
-        <ListItem button>
-            <ListItemIcon>
-                <BarChartIcon />
+                <Colors />
             </ListItemIcon>
             <ListItemText primary="Colores" />
+        </ListItem>
+        <ListItem button>
+            <ListItemIcon>
+                <Additions />
+            </ListItemIcon>
+            <ListItemText primary="Sumas" />
         </ListItem>
     </div>
 );

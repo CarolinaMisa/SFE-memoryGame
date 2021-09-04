@@ -1,0 +1,15 @@
+.MuiToolbar-root{
+    background-color: #57CC99;
+}
+
+.MuiDrawer-paper{
+    background-color: #D7F7DB;
+}
+.MuiTypography-body1{
+    font-weight:bold;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.MuiListItem-gutters {
+    margin-top: 25px;
+}
