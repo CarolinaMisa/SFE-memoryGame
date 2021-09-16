@@ -13,3 +13,12 @@
 .MuiListItem-gutters {
     margin-top: 25px;
 }
+
+.activeLink:link{
+    color: #282c34;
+    text-decoration: none;
+}
+
+.MuiDrawer-root{
+    height: 100%;
+}
