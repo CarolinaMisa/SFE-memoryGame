@@ -1,9 +1,9 @@
 .MuiToolbar-root{
-    background-color: #57CC99;
+    background-color: #225564;
 }
 
 .MuiDrawer-paper{
-    background-color: #D7F7DB;
+    background-color: #86B7CD;
 }
 .MuiTypography-body1{
     font-weight:bold;
@@ -11,7 +11,7 @@
 }
 
 .MuiListItem-gutters {
-    margin-top: 25px;
+    margin-top: 60px;
 }
 
 .activeLink:link{

@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     BrowserRouter as Router,
     Switch,
@@ -10,6 +11,7 @@ import Dashboard from './components/Dashboard';
 
 function App() {
     return (
+        <div className="background">
         <Router>
             <Dashboard/>
             <Switch>
@@ -24,6 +26,7 @@ function App() {
                 </Route>
             </Switch>
         </Router>
+        </div>
     )
 }
 

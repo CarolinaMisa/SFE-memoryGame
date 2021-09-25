@@ -11,6 +11,10 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems } from './listItems';
+import './css/Dashboard.css'
+import {headerListItems} from "./headerItems";
+
+import Stopwatch from "./Header/Stopwatch";
 
 const drawerWidth = 240;
 
@@ -117,6 +121,15 @@ export default function Dashboard() {
                     >
                         <MenuIcon />
                     </IconButton>
+
+                        <Divider />
+                        <List>{headerListItems}</List>
+                    <div className="App">
+                        <div className="App-title"></div>
+                        <div className="Timers">
+                            <Stopwatch />
+                        </div>
+                    </div>
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -134,7 +147,6 @@ export default function Dashboard() {
                 <Divider />
                 <List>{mainListItems}</List>
             </Drawer>
-
         </div>
     );
 }
