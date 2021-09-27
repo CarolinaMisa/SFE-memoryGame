@@ -11,7 +11,6 @@ import Dashboard from './components/Dashboard';
 
 function App() {
     return (
-        <div className="background">
         <Router>
             <Dashboard/>
             <Switch>
@@ -26,7 +25,7 @@ function App() {
                 </Route>
             </Switch>
         </Router>
-        </div>
+
     )
 }
 

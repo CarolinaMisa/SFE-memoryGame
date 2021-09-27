@@ -21,8 +21,8 @@
 
 @media (max-width: 30px) {
     .Timers {
-
         align-items: center;
+        position: relative;
     }
 }
 @media (max-width: 30px) {

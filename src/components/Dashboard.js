@@ -108,6 +108,7 @@ export default function Dashboard() {
     };
 
     return (
+
         <div className={classes.root && classes.content}>
             <CssBaseline />
             <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
@@ -123,7 +124,7 @@ export default function Dashboard() {
                     </IconButton>
 
                         <Divider />
-                        <List>{headerListItems}</List>
+                    <List>{headerListItems}</List>
                     <div className="App">
                         <div className="App-title"></div>
                         <div className="Timers">
@@ -147,6 +148,7 @@ export default function Dashboard() {
                 <Divider />
                 <List>{mainListItems}</List>
             </Drawer>
+
         </div>
     );
 }
