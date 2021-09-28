@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Button from 'react-bootstrap/Button';
-import "../css/Stopwatch.css";
+import "../css/Header.css";
 
 class Stopwatch extends Component {
     state = {

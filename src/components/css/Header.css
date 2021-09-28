@@ -1,3 +1,16 @@
+Header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.retry {
+    position: absolute;
+    left: 250px;
+    top: 58px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -32,8 +45,8 @@
 }
 
 .Stopwatch {
-    margin-left: 600px;
-    margin-right: 30px;
+    margin-left: 250px;
+    margin-right: 800px;
     border: 2px solid grey;
     border-radius: 4px;
     padding: 10px;

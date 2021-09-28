@@ -4,6 +4,7 @@
 
 .MuiDrawer-paper{
     background-color: #D7F7DB;
+    height: 100vh;
 }
 .MuiTypography-body1{
     font-weight:bold;
