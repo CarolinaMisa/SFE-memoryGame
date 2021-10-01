@@ -6,9 +6,9 @@ Header {
 }
 
 .retry {
-    position: absolute;
-    left: 250px;
+    margin-left: 250px;
     top: 58px;
+
 }
 
 * {
@@ -46,7 +46,7 @@ Header {
 
 .Stopwatch {
     margin-left: 250px;
-    margin-right: 800px;
+    margin-right: 80px;
     border: 2px solid grey;
     border-radius: 4px;
     padding: 10px;
@@ -76,4 +76,13 @@ button:hover {
 .Stopwatch-display {
     padding: 5px 0;
     font-size: 15px;
+}
+
+.attempt{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 250px;
 }
