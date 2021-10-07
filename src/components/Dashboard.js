@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,10 +11,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems } from './listItems';
 import Header from "./Header/Header";
+import {withStyles} from "@material-ui/core";
 
 const drawerWidth = 240;
 
-const useStyles = makeStyles((theme) => ({
+const useStyle = withStyles((theme) => ({
     root: {
         display: 'flex',
     },
@@ -95,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Dashboard() {
-    const classes = useStyles();
+    const classes = useStyle;
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
         setOpen(true);

@@ -11,23 +11,23 @@ export default class Header extends Component {
     render() {
         return (
             <header>
+                    <div className="Timers">
+                        <div className="retry">
+                         <Button onClick={this.props.resetGame}>
+                            <Retry />
+                         </Button>
+                        </div>
 
-                <div className="Timers">
-                    <div className="retry">
-                     <Button onClick={this.props.resetGame}>
-                        <Retry />
-                     </Button>
+                        <div className="App">
+                            <div className="App-title"></div>
+                                <Stopwatch />
+                        </div>
+
+                        <div className="attempt">
+                            Intentos: {this.props.numberOfAttemps}
+                        </div>
                     </div>
 
-                <div className="App">
-                    <div className="App-title"></div>
-                        <Stopwatch />
-                </div>
-
-                <div className="attempt">
-                    Intentos: {this.props.numberOfAttemps}
-                </div>
-                </div>
             </header>
 
         );
