@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Dashboard from './components/Dashboard';
+import Header from "./components/Header/Header";
 
 
 function App() {
@@ -14,7 +15,10 @@ function App() {
         <Router>
             <Dashboard/>
             <Switch>
-                <Route path="/" exact></Route>
+                <Route path="/" exact>
+                    <Header />
+                </Route>
+
                 <Route path="/numbers">
                 </Route>
                 <Route path="/words">

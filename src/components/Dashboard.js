@@ -11,11 +11,11 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems } from './listItems';
 import Header from "./Header/Header";
-import {withStyles} from "@material-ui/core";
+import {withStyles} from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 
-const useStyle = withStyles((theme) => ({
+const useStyle = theme => ({
     root: {
         display: 'flex',
     },
@@ -92,9 +92,10 @@ const useStyle = withStyles((theme) => ({
     fixedHeight: {
         height: 240,
     },
-}));
 
-export default function Dashboard() {
+});
+
+function Dashboard() {
     const classes = useStyle;
     const [open, setOpen] = React.useState(true);
     const handleDrawerOpen = () => {
@@ -122,7 +123,6 @@ export default function Dashboard() {
                 </Toolbar>
             </AppBar>
             <Drawer
-                variant="permanent"
                 classes={{
                     paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
                 }}
@@ -140,9 +140,9 @@ export default function Dashboard() {
             <main className={classes.content}>
                 <div className={classes.appBarSpacer} />
 
-                <Header />
 
             </main>
         </div>
     );
-}
+} export default withStyles(useStyle)(Dashboard);
+
