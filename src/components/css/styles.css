@@ -1,3 +1,6 @@
+body{
+    overflow-x:hidden;
+}
 .MuiToolbar-root{
     background-color: #57CC99;
 }
@@ -22,4 +25,119 @@
 
 .MuiDrawer-root{
     height: 100%;
+}
+
+.master-container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 200px 200px;
+    aling-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    aling-items: center;
+    justify-content: center;
+}
+
+.image {
+    display: block;
+    width: 80%;
+    height: auto;
+    opacity: .5;
+    display: block;
+    margin:auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 15px;
+
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text a {
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#numbers{
+    background-color: rgb(208, 242, 255);
+}
+#words{
+    background-color: rgb(200, 250, 205);
+}
+#words .image{
+    width: 73%;
+}
+#colors{
+    background-color: #f8bcbc;
+}
+#colors .image{
+    opacity: 0.7;
+
+}
+#additions{
+    background-color: #F9CF93;
+}
+#numbers .overlay{
+    background-color: #6DDCCF;
+}
+#words .overlay{
+    background-color: rgb(104, 220, 116);
+}
+#colors .overlay{
+    background-color: #f38181;
+}
+#additions .overlay{
+    background-color: #e89f4e;
+}
+.title{
+    margin-top: 15vh;
+    aling-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+#welcome{
+    font-family: 'Chewy', cursive;
+    font-size: 40px;
+}
+
+#subtitle{
+    font-family: 'Yaldevi', sans-serif;
+    font-size: 20px;
+    margin-top: -3vh;
+}
+
+.additions{
+    width: 56%;
+    height: auto;
 }

@@ -8,6 +8,7 @@ import {
 
 import Dashboard from './components/Dashboard';
 import Header from "./components/Header/Header";
+import Options from './components/Option';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
             <Dashboard/>
             <Switch>
                 <Route path="/" exact>
-                    <Header />
+                    <Options/>
                 </Route>
 
                 <Route path="/numbers">

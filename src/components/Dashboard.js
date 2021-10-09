@@ -10,7 +10,6 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems } from './listItems';
-import Header from "./Header/Header";
 import {withStyles} from "@material-ui/core/styles";
 
 const drawerWidth = 240;
@@ -97,7 +96,7 @@ const useStyle = theme => ({
 
 function Dashboard() {
     const classes = useStyle;
-    const [open, setOpen] = React.useState(true);
+    const [open, setOpen] = React.useState(false);
     const handleDrawerOpen = () => {
         setOpen(true);
     };
