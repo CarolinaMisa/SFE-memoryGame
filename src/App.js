@@ -14,13 +14,14 @@ import NumbersPage from "./components/NumbersPage";
 function App() {
     return (
         <Router>
+            <Dashboard/>
             <Switch>
                 <Route path="/" exact>
                     <Options/>
                 </Route>
 
-                <Route path="/" exact>
-                    <Dashboard/>
+                <Route path="/numbers">
+                    <NumbersPage/>
                 </Route>
                 <Route path="/words">
                 </Route>
