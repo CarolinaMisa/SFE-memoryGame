@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { StylesProvider} from '@material-ui/core/styles';
+import 'font-awesome/css/font-awesome.css';
+
 
 ReactDOM.render(
     <StylesProvider injectFirst>

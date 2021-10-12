@@ -30,6 +30,7 @@ Header {
 .Timers {
     display: flex;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 @media (max-width: 30px) {
@@ -45,7 +46,7 @@ Header {
 }
 
 .Stopwatch {
-    margin-left: 250px;
+    margin-left: 13.02VW;
     margin-right: 80px;
     border: 2px solid grey;
     border-radius: 4px;
@@ -84,5 +85,5 @@ button:hover {
     color: rgb(0, 0, 0);
     font-size: 25px;
     padding: 10px;
-    margin-left: 250px;
+    margin-left: 13.02VW;
 }

@@ -7,20 +7,20 @@ import {
 } from "react-router-dom";
 
 import Dashboard from './components/Dashboard';
-import Header from "./components/Header/Header";
 import Options from './components/Option';
+import NumbersPage from "./components/NumbersPage";
 
 
 function App() {
     return (
         <Router>
-            <Dashboard/>
             <Switch>
                 <Route path="/" exact>
                     <Options/>
                 </Route>
 
-                <Route path="/numbers">
+                <Route path="/" exact>
+                    <Dashboard/>
                 </Route>
                 <Route path="/words">
                 </Route>

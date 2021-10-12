@@ -12,8 +12,8 @@ export default class Header extends Component {
         return (
             <header>
                     <div className="Timers">
-                        <div className="retry">
-                         <Button onClick={this.props.resetGame}>
+                        <div>
+                         <Button className="retry" onClick={this.props.resetGame}>
                             <Retry />
                          </Button>
                         </div>
@@ -24,7 +24,7 @@ export default class Header extends Component {
                         </div>
 
                         <div className="attempt">
-                            Intentos: {this.props.numberOfAttemps}
+                            Intentos: {this.props.numberOfAttempts}
                         </div>
                     </div>
 
