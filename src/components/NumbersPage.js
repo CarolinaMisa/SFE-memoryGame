@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Dashboard from "./Dashboard";
-import {Router} from "@material-ui/icons";
 import Header from "./Header/Header";
 import Tablero from "./Tablero";
 import buildDeck from "./utils/buildDeck";

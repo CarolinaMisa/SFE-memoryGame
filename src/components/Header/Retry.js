@@ -1,10 +1,13 @@
 import React from 'react';
-import { ReactComponent as Restart} from "../../img/retry.svg";
+import retry from "../../img/retry.png";
+import '../css/Header.css';
 
 function Retry() {
     return (
         <div className="Retry">
-            <Restart />
+            <button className="retry">
+                <img src={retry} width="50px" height="50px"/>
+            </button>
         </div>
     );
 }

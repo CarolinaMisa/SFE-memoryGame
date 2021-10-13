@@ -9,6 +9,7 @@ import {
 import Dashboard from './components/Dashboard';
 import Options from './components/Option';
 import NumbersPage from "./components/NumbersPage";
+import Header from "./components/Header/Header";
 
 
 function App() {
