@@ -6,15 +6,16 @@
 .cover{
     width: 125px;
     height: 125px;
-    background-color: #e89f4e;
+    background-color: #6DDCCF
 }
 
 .content{
     width: 125px;
     height: 125px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #61dafb;
+    background-color: rgb(208, 242, 255);
 }
 
 .ReactCardFlip{
