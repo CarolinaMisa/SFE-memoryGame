@@ -3,6 +3,7 @@ import Stopwatch from "./Stopwatch";
 import Retry from "./Retry";
 import '../css/Header.css';
 import {Button} from "@material-ui/core";
+import iGiveUp from '../Directory/NumbersPage';
 
 
 
@@ -23,6 +24,12 @@ export default class Header extends Component {
                             <div className="col-md-4">
                                 <p className="attempt">Intentos: {this.props.numberOfAttempts}</p>
                             </div>
+                        </div>
+
+                        <div>
+                            <Button className="answer" variant="contained" onClick={this.iGiveUp}>
+                                Solución
+                            </Button>
                         </div>
                     </div>
         );

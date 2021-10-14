@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Header from "./Header/Header";
-import Tablero from "./Tablero";
-import buildDeck from "./utils/buildDeck";
+import buildDeck from "../utils/buildDeck";
+import Header from "../Header/Header";
+import Tablero from "../Tablero";
 
 
 
@@ -15,7 +15,7 @@ const getInitialState = () => {
     };
 }
 
-class NumbersPage extends Component{
+class ColorsPage extends Component{
     //para indicarle que este es tu estado inicial
     constructor(props) {
         super(props);
@@ -27,6 +27,7 @@ class NumbersPage extends Component{
                 <Header
                     numberOfAttempts={this.state.numberOfAttempts}
                     resetGame={() => this.resetGame()}
+                    iGiveUp={((card) => card.wasGuessed=true)}
                 />
                 <Tablero
                     //creamos propiedad. Hacemos referencia al estado inicial de baraja que creamos en getInitialState
@@ -92,6 +93,7 @@ class NumbersPage extends Component{
                 });
             }
             this.verifyIfWinner(deck);
+
             //actualizamos calculos.
             this.setState({
                 //selectedCouple vuelve a estar en blanco. Se haya o no adivinado
@@ -112,7 +114,7 @@ class NumbersPage extends Component{
             //filtra, si el filter es > 0, significa q todavia hay cartas q no fueron adivinadas
             deck.filter((card) => !card.wasGuessed).length === 0
         ) {
-          //TODO: Utilizar dialog o modal de material-ui
+            //TODO: Utilizar dialog o modal de material-ui
             alert(`Ganaste en ${this.state.numberOfAttempts} intentos!`);
 
         }
@@ -124,4 +126,8 @@ class NumbersPage extends Component{
             getInitialState()
         );
     }
-} export default NumbersPage;
+
+    iGiveUp(deck){
+        deck.forEach((card) => card.wasGuessed=true);
+    }
+} export default ColorsPage;
