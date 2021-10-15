@@ -27,7 +27,6 @@ class NumbersPage extends Component{
                 <Header
                     numberOfAttempts={this.state.numberOfAttempts}
                     resetGame={() => this.resetGame()}
-                    iGiveUp={((card) => card.wasGuessed=true)}
                 />
                 <Tablero
                     //creamos propiedad. Hacemos referencia al estado inicial de baraja que creamos en getInitialState
@@ -127,9 +126,5 @@ class NumbersPage extends Component{
             getInitialState()
         );
     }
-
-    iGiveUp (deck){
-        deck.forEach((card) => card.wasGuessed=true);
-            }
 
 } export default NumbersPage;

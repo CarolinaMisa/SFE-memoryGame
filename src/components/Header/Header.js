@@ -26,11 +26,6 @@ export default class Header extends Component {
                             </div>
                         </div>
 
-                        <div>
-                            <Button className="answer" variant="contained" onClick={this.iGiveUp}>
-                                Solución
-                            </Button>
-                        </div>
                     </div>
         );
     }
