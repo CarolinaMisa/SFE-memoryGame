@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import buildDeck from "../utils/buildDeck";
-import Header from "../Header/Header";
-import Tablero from "../Tablero";
+import Header from "../../Header/Header";
+import Tablero from "../../Tablero";
+import buildDeckColors from "./buildDeckColors";
 
 
 
 const getInitialState = () => {
-    const deck = buildDeck();
+    const deck = buildDeckColors();
     return{
         deck,
         selectedCouple: [],

@@ -3,7 +3,7 @@ import Stopwatch from "./Stopwatch";
 import Retry from "./Retry";
 import '../css/Header.css';
 import {Button} from "@material-ui/core";
-import iGiveUp from '../Directory/NumbersPage';
+import iGiveUp from '../Directory/numbers/NumbersPage';
 
 
 

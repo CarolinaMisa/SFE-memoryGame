@@ -8,9 +8,9 @@ import {
 
 import Dashboard from './components/Dashboard';
 import Options from './components/Option';
-import NumbersPage from "./components/Directory/NumbersPage";
+import NumbersPage from "./components/Directory/numbers/NumbersPage";
 import AdditionsPage from "./components/Directory/AdditionsPage";
-import ColorsPage from "./components/Directory/ColorsPage";
+import ColorsPage from "./components/Directory/colors/ColorsPage";
 import WordsPage from "./components/Directory/WordsPage";
 
 
@@ -27,11 +27,11 @@ function App() {
                 <Route path="/numbers">
                     <NumbersPage/>
                 </Route>
-                <Route path="/words">
-                    <WordsPage/>
-                </Route>
                 <Route path="/colors">
                     <ColorsPage/>
+                </Route>
+                <Route path="/words">
+                    <WordsPage/>
                 </Route>
                 <Route path="/additions">
                     <AdditionsPage/>

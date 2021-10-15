@@ -19,20 +19,20 @@ export const mainListItems = (
                 <ListItemText primary="Números" />
             </ListItem>
         </Link>
-        <Link href="words" className="activeLink">
-            <ListItem button>
-                <ListItemIcon>
-                    <Words />
-                </ListItemIcon>
-                <ListItemText primary="Primeras palabras"/>
-            </ListItem>
-        </Link>
         <Link href="colors" className="activeLink">
             <ListItem button>
                 <ListItemIcon>
                     <Colors />
                 </ListItemIcon>
                 <ListItemText primary="Colores" />
+            </ListItem>
+        </Link>
+        <Link href="words" className="activeLink">
+            <ListItem button>
+                <ListItemIcon>
+                    <Words />
+                </ListItemIcon>
+                <ListItemText primary="Primeras palabras"/>
             </ListItem>
         </Link>
         <Link href="additions" className="activeLink">

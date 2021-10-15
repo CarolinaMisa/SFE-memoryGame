@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import clsx from 'clsx';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Drawer from '@material-ui/core/Drawer';
@@ -11,9 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { mainListItems } from './listItems';
 import {withStyles} from "@material-ui/core/styles";
-import Header from "./Header/Header";
-import Tablero from "./Tablero";
-import buildDeck from "./utils/buildDeck";
+
 
 const drawerWidth = 240;
 
