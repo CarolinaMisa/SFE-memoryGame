@@ -14,8 +14,8 @@ export default class Card extends Component {
                 >
                     <div className="cover"></div>
                     <div className="content">
-                        //TODO: como lo cambio aca??
-                            <i className={`image${this.props.icon}`}></i>
+
+                            <img src={this.props.icon}/>
                     </div>
                 </ReactCardFlip>
 
