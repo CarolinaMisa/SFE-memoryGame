@@ -12,6 +12,8 @@ import NumbersPage from "./components/Directory/numbers/NumbersPage";
 import AdditionsPage from "./components/Directory/AdditionsPage";
 import ColorsPage from "./components/Directory/colors/ColorsPage";
 import WordsPage from "./components/Directory/WordsPage";
+import Footer from "./components/Footer";
+
 
 
 
@@ -23,7 +25,6 @@ function App() {
                 <Route path="/" exact>
                     <Options/>
                 </Route>
-
                 <Route path="/numbers">
                     <NumbersPage/>
                 </Route>
@@ -37,6 +38,7 @@ function App() {
                     <AdditionsPage/>
                 </Route>
             </Switch>
+            <Footer/>
         </Router>
 
     )
