@@ -31,13 +31,13 @@
     margin-top: 10vh;
 }
 
-@media (max-width: 30px) {
+@media (max-width: 1.5vW) {
     .Timers {
         align-items: center;
         position: relative;
     }
 }
-@media (max-width: 30px) {
+@media (max-width: 1.5vW) {
     .Stopwatch {
         margin-bottom: 10px;
     }

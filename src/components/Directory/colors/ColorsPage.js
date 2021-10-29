@@ -73,11 +73,11 @@ class ColorsPage extends Component{
         //establecemos un delay al voltear una carta
         setTimeout(() => {
             const [firstCard, secondCard] = selectedCouple;
+            console.log(secondCard);
             let deck = this.state.deck;
 
             //si entramos en este if, significa que el usuario logró adivinar esta pareja
             if(firstCard.icon === secondCard.icon){
-
                 //debemos marcar el flag 'wasGuessed'
                 //le hacemos cambios a la baraja
                 deck = deck.map((card) => {
@@ -121,6 +121,10 @@ class ColorsPage extends Component{
 
     }
 
+    iGiveUp(deck){
+        deck.forEach((card)=>card.wasGuessed='true');
+
+    }
     resetGame() {
         this.setState(
             getInitialState()

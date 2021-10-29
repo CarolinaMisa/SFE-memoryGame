@@ -40,6 +40,7 @@ class NumbersPage extends Component{
     }
 
     selectCard(card){
+        console.log(card);
         //cuando el usuario no deberia seleccionar?
         //cuando esta comparando
         //si el usuario ya eligio esta carta( >-1 es decir si la carta ya esta en el array de parejas seleccionadas
@@ -75,14 +76,14 @@ class NumbersPage extends Component{
             let deck = this.state.deck;
 
             //si entramos en este if, significa que el usuario logró adivinar esta pareja
-            if(firstCard.icon === secondCard.icon){
+            if(firstCard.validator === secondCard.validator){
 
                 //debemos marcar el flag 'wasGuessed'
                 //le hacemos cambios a la baraja
                 deck = deck.map((card) => {
 
                     //si la carta q tengo en la barja, es distinta a firstCard, no es la carta q el usuario selecciono
-                    if(card.icon !== firstCard.icon){
+                    if(card.validator !== firstCard.validator){
 
                         //retorno la carta
                         return card;

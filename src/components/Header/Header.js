@@ -21,9 +21,17 @@ export default class Header extends Component {
                             <div className="col-md-4">
                                 <Stopwatch />
                             </div>
+
                             <div className="col-md-4">
                                 <p className="attempt">Intentos: {this.props.numberOfAttempts}</p>
                             </div>
+
+                            <div>
+                                <Button className="answer" variant="contained" onClick={this.iGiveUp}>
+                                    Solución
+                                </Button>
+                            </div>
+
                         </div>
 
                     </div>

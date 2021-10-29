@@ -1,17 +1,17 @@
 .card{
-    width: 125px;
-    height:125px;
+    width: 6.5vW;
+    height:13vh;
 }
 
 .cover{
-    width: 125px;
-    height: 125px;
+    width: 6.5vW;
+    height: 13vh;
     background-color: #6DDCCF
 }
 
 .content{
-    width: 125px;
-    height: 125px;
+    width: 6.5vW;
+    height: 13vh;
     display: flex;
     align-items: center;
     justify-content: center;
