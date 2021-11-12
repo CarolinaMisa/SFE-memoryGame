@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import './css/styles.css';
 import numbers from '../img/numbers.jpg';
-import math from '../img/math.png';
 import paint from '../img/paint.png';
-import words from '../img/words.png';
+import Footer from "./Footer";
 
 
 
@@ -31,21 +30,8 @@ export default class Option extends Component {
                             <div className="text"><a href="colors">COLORES</a></div>
                         </div>
                     </div>
-
-                    <div className="container" id="words">
-                        <img src={words} alt="Avatar" className="image" />
-                        <div className="overlay">
-                            <div className="text"><a href="words">PRIMERAS PALABRAS</a></div>
-                        </div>
-                    </div>
-
-                    <div className="container" id="additions">
-                        <img src={math} alt="Avatar" className="image additions" />
-                        <div className="overlay">
-                            <div className="text"><a href="additions">SUMAS</a></div>
-                        </div>
-                    </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

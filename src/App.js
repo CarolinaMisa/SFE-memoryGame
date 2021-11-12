@@ -9,13 +9,7 @@ import {
 import Dashboard from './components/Dashboard';
 import Options from './components/Option';
 import NumbersPage from "./components/Directory/numbers/NumbersPage";
-import AdditionsPage from "./components/Directory/AdditionsPage";
 import ColorsPage from "./components/Directory/colors/ColorsPage";
-import WordsPage from "./components/Directory/WordsPage";
-import Footer from "./components/Footer";
-
-
-
 
 function App() {
     return (
@@ -31,14 +25,7 @@ function App() {
                 <Route path="/colors">
                     <ColorsPage/>
                 </Route>
-                <Route path="/words">
-                    <WordsPage/>
-                </Route>
-                <Route path="/additions">
-                    <AdditionsPage/>
-                </Route>
             </Switch>
-            <Footer/>
         </Router>
 
     )
